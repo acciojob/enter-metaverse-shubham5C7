@@ -2,10 +2,11 @@
 
     document.getElementById("enterBtn").addEventListener("click",()=>{
       const p = document.getElementById("status");
+
+		  statusP.innerHTML = "";
 		
-     const h1 = document.createElement("h1");
+      const h1 = document.createElement("h1");
           h1.innerText = "Entered Metaverse";
-          h1.id = "status";  
-          p.replaceWith(h1);
+          statusP.appendChild(h1);
 		
-     })
+     });
